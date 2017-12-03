@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.deigon.concroledegastos2.Receita">
+
+        <ImageButton
+            android:id="@+id/btnReceitaVoltar"
+            android:layout_width="70dp"
+            android:layout_height="106dp"
+            android:layout_marginTop="7dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/voltar"
+            tools:layout_editor_absoluteX="6dp" />
+    <ImageButton
+        android:id="@+id/btnGastoListar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/list"
+        tools:layout_editor_absoluteX="6dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:textSize="24sp"
+        android:layout_above="@+id/textView5"
+        android:layout_alignEnd="@+id/btnReceitaVoltar" />
+
+    <EditText
+        android:id="@+id/edtNomeGasto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/btnReceitaVoltar"
+        android:layout_toStartOf="@+id/btnGastoListar"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/edtNomeGasto"
+        android:layout_marginTop="48dp"
+        android:text="Descriçao"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edtDescGasto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_marginStart="14dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Valor"
+        android:textSize="24sp"
+        android:layout_below="@+id/edtDescGasto"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/edtValorGasto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_toStartOf="@+id/btnGastoListar" />
+
+    <Button
+        android:id="@+id/btnSalvarGasto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:text="Salvar" />
+
+    <TextView
+        android:id="@+id/idTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="35dp"
+        android:layout_toEndOf="@+id/textView5"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

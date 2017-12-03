@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout"
+    tools:context="com.example.deigon.concroledegastos2.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/btnCasa"
+            android:layout_width="204dp"
+            android:layout_height="147dp"
+            android:contentDescription="@string/casa"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/home"
+            />
+
+        <ImageButton
+            android:id="@+id/btnSupermercado"
+            android:layout_width="wrap_content"
+            android:layout_height="147dp"
+            android:contentDescription="@string/supermercado"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/supermercado" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/btnSaude"
+            android:layout_width="204dp"
+            android:layout_height="147dp"
+            android:contentDescription="@string/saude"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/saude" />
+
+        <ImageButton
+            android:id="@+id/btnTrasnporte"
+            android:layout_width="wrap_content"
+            android:layout_height="147dp"
+            android:contentDescription="@string/transporte"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/transporte" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout2"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/btnLazer"
+            android:layout_width="204dp"
+            android:layout_height="147dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/diversao" />
+
+        <ImageButton
+            android:id="@+id/btnReceita"
+            android:layout_width="wrap_content"
+            android:layout_height="147dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/money" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout3"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/btnEditar"
+            android:layout_width="204dp"
+            android:layout_height="147dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/detalhes" />
+
+        <ImageButton
+            android:id="@+id/btnDetalhes"
+            android:layout_width="204dp"
+            android:layout_height="147dp"
+            android:contentDescription="@string/detalhes"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/lista" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtSaldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="111dp"
+        android:text="Saldo:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
